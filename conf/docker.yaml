@@ -30,10 +30,10 @@ auth:
 # a list of other known repositories we can talk to
 uplinks:
   npmjs:
-    url: https://registry.npmjs.org/
+    url: https://registry.npm.taobao.org/
 
 packages:
-  '@*/*':
+  '@ww/*':
     # scoped packages
     access: $all
     publish: $authenticated
@@ -62,4 +62,4 @@ middlewares:
 # log settings
 logs:
   - {type: stdout, format: pretty, level: http}
-  #- {type: file, path: verdaccio.log, level: info}
+  - {type: file, path: verdaccio.log, level: info}
